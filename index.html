@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.1.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="./script.js"> -->
+
+    <title>Personal App</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div id="header">
+            <div class="leftlockup col-third">
+
+            </div>
+            <div class="centerlockup col-third">
+                <div class="navigation">
+                    <div class="navigation__icon">
+                        <i class="fas fa-angle-left"></i>
+                        <!-- <img src="./node_modules/@fluentui/svg-icons/icons/ios_arrow_ltr_24_regular.svg" alt=""> -->
+                    </div>
+                    <div class="navigation__icon">
+                        <i class="fas fa-angle-right"></i>
+                        <!-- <img src="./node_modules/@fluentui/svg-icons/icons/ios_arrow_rtl_24_regular.svg" alt=""> -->
+                    </div>
+                </div>
+                <div class="header__search">
+                    <div class="header__search-icon">
+                        <i class="fas fa-search"></i>
+                        <!-- <img src="./node_modules/@fluentui/svg-icons/icons/search_20_regular.svg" alt=""> -->
+                    </div>
+                    <input type="text" placeholder="Search or type a command" class="header__search-input" >
+    
+                </div>
+            </div>
+            
+            <div class="header__icon col-third">
+                <div class="header__icon-avatar">
+                    <img src="./assets/img/header/ava.png" alt="">
+                    <div class="header__icon-status">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    
+                </div>
+                <div class=" header__icon-list header__icon-list--separate">
+                    <div class="header__icon-list-item ">
+                        <i class="fas fa-minus"></i>
+                        <!-- <img src="./node_modules/@fluentui/svg-icons/icons/line_horizontal_1_20_regular.svg" alt=""> -->
+                    </div>
+                    <div class="header__icon-list-item">
+                        <i class="far fa-square-full"></i>
+                        <!-- <img src="./node_modules/@fluentui/svg-icons/icons/dismiss_24_regular.svg" alt=""> -->
+                    </div>
+                    <div class="header__icon-list-item">
+                        <i class="fas fa-times"></i>
+                        <!-- <img src="./node_modules/@fluentui/svg-icons/icons/stop_24_regular.svg" alt=""> -->
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="container">
+            <div id="menu">
+                <div class="menu__main">
+                    <div class="menu__list">
+                        <div class="menu__list-item">
+                            <img src="./node_modules/@fluentui/svg-icons/icons/alert_24_regular.svg" alt="">
+                            <p>Activity</p>
+                        </div>
+                        <div class="menu__list-item">
+                            <img src="./node_modules/@fluentui/svg-icons/icons/chat_24_regular.svg" alt="">
+                            <p>Chat</p>
+                        </div>
+                        <div class="menu__list-item">
+                            <img src="./node_modules/@fluentui/svg-icons/icons/people_team_24_regular.svg" alt="">
+                            <p>Teams</p>
+                        </div>
+                        <div class="menu__list-item">
+                            <img src="./node_modules/@fluentui/svg-icons/icons/calendar_ltr_24_regular.svg" alt="">
+                            <p>Calendar</p>
+                        </div>
+                        <div class="menu__list-item">
+                            <img src="./node_modules/@fluentui/svg-icons/icons/call_24_regular.svg" alt="">
+                            <p>Call</p>
+                        </div>
+                        <div class="menu__list-item">
+                            <img src="./node_modules/@fluentui/svg-icons/icons/document_24_regular.svg" alt="">
+                            <p>Files</p>
+                        </div>
+                        <div class="menu__devider">
+    
+                        </div>
+                        <div class="menu__list-item menu__list-item-js">
+                            <img src="./node_modules/@fluentui/svg-icons/icons/more_horizontal_24_filled.svg" alt="">                            
+                            <div class="menu__more menu__more-js">                              
+                                <div class="menu__more-header">
+                                    <input type="text" placeholder="Find an app">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div class="menu__more-body">
+                                    <div class="menu__more-content">
+                                        <div class="menu__more-content-list">
+                                            <div class="menu__more-content-list-item">
+                                                <img src="./assets/img/content/ava2.png" alt="">
+                                                <p>Edu Class Notebook</p>
+    
+                                            </div>
+                                            <div class="menu__more-content-list-item">
+                                                <img src="./assets/img/content/ava2.png" alt="">
+                                                <p>Edu Class Notebook</p>
+                                                
+                                            </div>
+                                            <div class="menu__more-content-list-item">
+                                                <img src="./assets/img/content/ava2.png" alt="">
+                                                <p>Edu Class Notebook</p>
+                                                
+                                            </div>
+                                            <div class="menu__more-content-list-item">
+                                                <img src="./assets/img/content/ava2.png" alt="">
+                                                <p>Edu Class Notebook</p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu__more-content">
+                                        <div class="menu__more-content-title">
+                                            <span>Recent</span>
+                                            <i class="fas fa-angle-down"></i>
+                                        </div>
+                                        <div class="menu__more-content-list">
+                                            <div class="menu__more-content-list-item">
+                                                <img src="./assets/img/content/ava2.png" alt="">
+                                                <p>Edu Class Notebook</p>
+    
+                                            </div>
+                                            <div class="menu__more-content-list-item">
+                                                <img src="./assets/img/content/ava2.png" alt="">
+                                                <p>Edu Class Notebook</p>
+                                                
+                                            </div>
+                                            <div class="menu__more-content-list-item">
+                                                <img src="./assets/img/content/ava2.png" alt="">
+                                                <p>Edu Class Notebook</p>
+                                                
+                                            </div>
+                                            <div class="menu__more-content-list-item">
+                                                <img src="./assets/img/content/ava2.png" alt="">
+                                                <p>Edu Class Notebook</p>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="menu__more-content-list">
+                                            <div class="menu__more-content-list-item">
+                                                <img src="./assets/img/content/ava2.png" alt="">
+                                                <p>Edu Class Notebook</p>
+    
+                                            </div>
+                                            <div class="menu__more-content-list-item">
+                                                <img src="./assets/img/content/ava2.png" alt="">
+                                                <p>Edu Class Notebook</p>
+                                                
+                                            </div>
+                                            <div class="menu__more-content-list-item">
+                                                <img src="./assets/img/content/ava2.png" alt="">
+                                                <p>Edu Class Notebook</p>
+                                                
+                                            </div>
+                                            <div class="menu__more-content-list-item">
+                                                <img src="./assets/img/content/ava2.png" alt="">
+                                                <p>Edu Class Notebook</p>
+                                                
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                    <div class="menu__more-content">
+                                        <div class="menu__more-content-title">
+                                            <span>Recent</span>
+                                            <i class="fas fa-angle-down"></i>
+                                        </div>
+                                        <div class="menu__more-content-list">
+                                            <div class="menu__more-content-list-item">
+                                                <img src="./assets/img/content/ava2.png" alt="">
+                                                <p>Edu Class Notebook</p>
+    
+                                            </div>
+                                            <div class="menu__more-content-list-item">
+                                                <img src="./assets/img/content/ava2.png" alt="">
+                                                <p>Edu Class Notebook</p>
+                                                
+                                            </div>
+                                            <div class="menu__more-content-list-item">
+                                                <img src="./assets/img/content/ava2.png" alt="">
+                                                <p>Edu Class Notebook</p>
+                                                
+                                            </div>
+                                            <div class="menu__more-content-list-item">
+                                                <img src="./assets/img/content/ava2.png" alt="">
+                                                <p>Edu Class Notebook</p>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="menu__more-content-list">
+                                            <div class="menu__more-content-list-item">
+                                                <img src="./assets/img/content/ava2.png" alt="">
+                                                <p>Edu Class Notebook</p>
+    
+                                            </div>
+                                            <div class="menu__more-content-list-item">
+                                                <img src="./assets/img/content/ava2.png" alt="">
+                                                <p>Edu Class Notebook</p>
+                                                
+                                            </div>
+                                            <div class="menu__more-content-list-item">
+                                                <img src="./assets/img/content/ava2.png" alt="">
+                                                <p>Edu Class Notebook</p>
+                                                
+                                            </div>
+                                            <div class="menu__more-content-list-item">
+                                                <img src="./assets/img/content/ava2.png" alt="">
+                                                <p>Edu Class Notebook</p>
+                                                
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="menu__list">
+                        <div class="menu__list-item menu__list-item--color menu__list-item--active">
+                            <img src="./node_modules/@fluentui/svg-icons/icons/apps_24_regular.svg" alt="">
+                            <p>Apps</p>
+                        </div>
+                        
+                    </div>                   
+                </div>
+                <div class="menu__detail">
+                    <div class="menu__detail-top">
+                        <div class="menu__search">
+                            <input type="text" placeholder="Store" class="menu__search-input">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="menu__content">
+                            <div class="menu__content-header">
+                                <img src="./node_modules/@fluentui/svg-icons/icons/apps_24_regular.svg" alt="">
+                                <h3>Apps</h3>
+                            </div>
+                            <div class="menu__content-list">
+                                <div class="menu__content-item">
+                                    <h4 class="menu__content-item-title">Northwind Traders</h4>
+                                    <ul>
+                                        <li>Built by your org</li>
+                                    </ul>
+                                </div>
+                                <div class="menu__content-item">
+                                    <h4 class="menu__content-item-title">Northwind Traders</h4>
+                                    <ul>
+                                        <li>Built by your org</li>
+                                        <li>Built by your org</li>
+                                        <li>Built by your org</li>
+                                        <li>Built by your org</li>
+                                        <li>Built by your org</li>
+        
+                                    </ul>
+                                </div>
+                                <div class="menu__content-item">
+                                    <h4 class="menu__content-item-title">Northwind Traders</h4>
+                                    <ul>
+                                        <li>Built by your org</li>
+                                        <li>Built by your org</li>
+                                        <li>Built by your org</li>
+                                        <li>Built by your org</li>
+                                        <li>Built by your org</li>
+        
+                                    </ul>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                    <div class="menu__footer">
+                        <ul>
+                            <li>Submit to app catalog</li>
+                            <li>Upload a custom app</li>
+                            <svg class="./">
+
+                            </svg>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="content">
+                <div class="content-container">
+                    <div id="slide">
+                        <div class="slide__item slide-1">
+                            <div class="slide__item-text">
+                                <h2 class="slide__item-text-title">Teams App Store</h2>
+                                <div class="slide__item-text-about">
+                                    <h3 class="slide__item-text-subtitle">Browse available apps and services</h3>
+                                    <p class="slide__item-text-description">Add your favorite app yourself or for a team.</p>
+                                </div>
+                                <p class="slide__item-text-note">Explore our picks</p>
+                            </div>
+                            <div class="slide__item-img">
+                                <img src="./assets/img/slideshow/icon1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="slide__item slide-2">
+                            <div class="slide__item-text">
+                                <h2 class="slide__item-text-title">Get learning resources for your class teams</h2>
+                                <div class="slide__item-text-about">
+                                    <h3 class="slide__item-text-subtitle">Browse available apps and services</h3>
+                                    <p class="slide__item-text-description">Add your favorite app yourself or for a team.</p>
+                                </div>
+                                <p class="slide__item-text-note">Explore our picks</p>
+                            </div>
+                            <div class="slide__item-img">
+                                <img src="./assets/img/slideshow/icon1.png" alt="">
+                            </div>
+
+                        </div>
+                        <div class="slide__item slide-3">
+                            <div class="slide__item-text">
+                                <h2 class="slide__item-text-title">Strengthen student wellbeing</h2>
+                                <div class="slide__item-text-about">
+                                    <h3 class="slide__item-text-subtitle">Browse available apps and services</h3>
+                                    <p class="slide__item-text-description">Add your favorite app yourself or for a team.</p>
+                                </div>
+                                <p class="slide__item-text-note">Explore our picks</p>
+                            </div>
+                            <div class="slide__item-img">
+                                <img src="./assets/img/slideshow/icon1.png" alt="">
+                            </div>
+
+                        </div>
+                        <div class="slide__item slide-4">
+                            <div class="slide__item-text">
+                                <h2 class="slide__item-text-title">Add apps to improve student outcomes</h2>
+                                <div class="slide__item-text-about">
+                                    <h3 class="slide__item-text-subtitle">Browse available apps and services</h3>
+                                    <p class="slide__item-text-description">Add your favorite app yourself or for a team.</p>
+                                </div>
+                                <p class="slide__item-text-note">Explore our picks</p>
+                            </div>
+                            <div class="slide__item-img">
+                                <img src="./assets/img/slideshow/icon1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="slide__item-arrow" onclick="plusSlides(1)">
+                            <i class="fas fa-angle-right"></i>
+                        </div>
+                        <div class="slide__item-control">
+                            <div class="slide__item-control-dots" >
+                                <div class="dot__item dot__item--active" onclick="currentSlide(1)">
+
+                                </div>
+                                <div class="dot__item" onclick="currentSlide(2)">
+
+                                </div>
+                                <div class="dot__item" onclick="currentSlide(3)">
+
+                                </div>
+                                <div class="dot__item" onclick="currentSlide(4)">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="tools">
+                        <div class="tools__viewswitcher">
+                            <div class="tools__viewswitcher-icon">
+                                <img src="./node_modules/@fluentui/svg-icons/icons/table_simple_20_regular.svg" alt="">
+                            </div>
+                            <div class="tools__viewswitcher-icon">
+                                <img src="./node_modules/@fluentui/svg-icons/icons/align_space_around_vertical_20_regular.svg" alt="">
+                            </div>
+                            <div class="tools__viewswitcher-icon">
+                                <img src="./node_modules/@fluentui/svg-icons/icons/text_bullet_list_ltr_20_regular.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="tools__sortfilter">
+                            <div class="tools__sortfilter-item">
+                                <div class="sort-icon">
+                                    <img src="./node_modules/@fluentui/svg-icons/icons/arrow_swap_20_regular.svg" alt="">
+                                </div>
+                                <p>Sort</p>
+                                <div class="sort-icon-arrow-down">
+                                    <img src="./node_modules/@fluentui/svg-icons/icons/ios_chevron_right_20_regular.svg" alt="">
+                                </div>
+
+                            </div>
+                            <div class="tools__sortfilter-item">
+                                <i class="fas fa-filter"></i>
+                                <p>Filter</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="information">
+                        <div class="information__container">
+                            <div class="information__header">
+                                <h4>Built by your org </h4>
+                                <span>See all</span>
+                            </div>
+                            
+                            <div class="information__list">
+                                <div class="information__item">
+                                    <div class="information__item-header">
+                                        <div class="information__item-header-img">
+                                            <img src="./assets/img/content/ava1.png" alt="">
+                                        </div>
+                                        <div class="information__item-header-title">
+                                            <p>Tech Support</p>
+                                            <div class="information__item-header-rate">
+                                                <div class="rate-star rate-star--color ">
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="rate-star rate-star--color">
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="rate-star rate-star--color">
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="rate-star ">
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div class="rate-star">
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <span>3.1</span>
+                                                <!-- <img src="./node_modules/@fluentui/svg-icons/icons/star_12_regular.svg" alt="">
+                                                <img src="./node_modules/@fluentui/svg-icons/icons/star_12_regular.svg" alt=""> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="information__item-description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet dui a erat consequat porta quis a velit. Nullam consectetur adipiscing elit. Mauris sit amet dui...
+                                    </p>
+                                </div>
+                                <div class="information__item">
+                                    <div class="information__item-header">
+                                        <div class="information__item-header-img">
+                                            <img src="./assets/img/content/ava2.png" alt="">
+                                        </div>
+                                        <div class="information__item-header-title">
+                                            <p>Tech Support</p>
+                                            <div class="information__item-header-rate">
+                                                <div class="information__item-header-rate">
+                                                    <div class="rate-star rate-star--color ">
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star rate-star--color">
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star rate-star--color">
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star ">
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star">
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                    <span>3.1</span>
+
+                                                <!-- <img src="./node_modules/@fluentui/svg-icons/icons/star_12_regular.svg" alt="">
+                                                <img src="./node_modules/@fluentui/svg-icons/icons/star_12_regular.svg" alt=""> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="information__item-description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet dui a erat consequat porta quis a velit. Nullam consectetur adipiscing elit. Mauris sit amet dui...
+                                    </p>                        
+                                </div>
+                                <div class="information__item">
+                                    <div class="information__item-header">
+                                        <div class="information__item-header-img">
+                                            <img src="./assets/img/content/ava3.png" alt="">
+                                        </div>
+                                        <div class="information__item-header-title">
+                                            <p>Tech Support</p>
+                                            <div class="information__item-header-rate">
+                                                <div class="information__item-header-rate">
+                                                    <div class="rate-star rate-star--color ">
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star rate-star--color">
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star rate-star--color">
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star ">
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star">
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                    <span>3.1</span>
+                                                <!-- <img src="./node_modules/@fluentui/svg-icons/icons/star_12_regular.svg" alt="">
+                                                <img src="./node_modules/@fluentui/svg-icons/icons/star_12_regular.svg" alt=""> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                    <p class="information__item-description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet dui a erat consequat porta quis a velit. Nullam consectetur adipiscing elit. Mauris sit amet dui...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="information__list">
+                                <div class="information__item">
+                                    <div class="information__item-header">
+                                        <div class="information__item-header-img">
+                                            <img src="./assets/img/content/ava4.png" alt="">
+                                        </div>
+                                        <div class="information__item-header-title">
+                                            <p>Tech Support</p>
+                                            <div class="information__item-header-rate">
+                                                <div class="rate-star rate-star--color ">
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="rate-star rate-star--color">
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="rate-star rate-star--color">
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="rate-star ">
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div class="rate-star">
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <span>3.1</span>
+                                                <!-- <img src="./node_modules/@fluentui/svg-icons/icons/star_12_regular.svg" alt="">
+                                                <img src="./node_modules/@fluentui/svg-icons/icons/star_12_regular.svg" alt=""> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="information__item-description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet dui a erat consequat porta quis a velit. Nullam consectetur adipiscing elit. Mauris sit amet dui...
+                                    </p>
+                                </div>
+                                <div class="information__item">
+                                    <div class="information__item-header">
+                                        <div class="information__item-header-img">
+                                            <img src="./assets/img/content/ava5.png" alt="">
+                                        </div>
+                                        <div class="information__item-header-title">
+                                            <p>Tech Support</p>
+                                            <div class="information__item-header-rate">
+                                                <div class="information__item-header-rate">
+                                                    <div class="rate-star rate-star--color ">
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star rate-star--color">
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star rate-star--color">
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star ">
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star">
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                    <span>3.1</span>
+
+                                                <!-- <img src="./node_modules/@fluentui/svg-icons/icons/star_12_regular.svg" alt="">
+                                                <img src="./node_modules/@fluentui/svg-icons/icons/star_12_regular.svg" alt=""> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="information__item-description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet dui a erat consequat porta quis a velit. Nullam consectetur adipiscing elit. Mauris sit amet dui...
+                                    </p>                             
+                                </div>
+                                <div class="information__item">
+                                    <div class="information__item-header">
+                                        <div class="information__item-header-img">
+                                            <img src="./assets/img/content/ava6.png" alt="">
+                                        </div>
+                                        <div class="information__item-header-title">
+                                            <p>Tech Support</p>
+                                            <div class="information__item-header-rate">
+                                                <div class="information__item-header-rate">
+                                                    <div class="rate-star rate-star--color ">
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star rate-star--color">
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star rate-star--color">
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star ">
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star">
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                    <span>3.1</span>
+                                                <!-- <img src="./node_modules/@fluentui/svg-icons/icons/star_12_regular.svg" alt="">
+                                                <img src="./node_modules/@fluentui/svg-icons/icons/star_12_regular.svg" alt=""> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                    <p class="information__item-description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet dui a erat consequat porta quis a velit. Nullam consectetur adipiscing elit. Mauris sit amet dui...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="information__container">
+                            <div class="information__header">
+                                <h4>What's new</h4>
+                                <span>See all</span>
+                            </div>
+                            
+                            <div class="information__list">
+                                <div class="information__item">
+                                    <div class="information__item-header">
+                                        <div class="information__item-header-img">
+                                            <img src="./assets/img/content/ava1.png" alt="">
+                                        </div>
+                                        <div class="information__item-header-title">
+                                            <p>Tech Support</p>
+                                            <div class="information__item-header-rate">
+                                                <div class="rate-star rate-star--color ">
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="rate-star rate-star--color">
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="rate-star rate-star--color">
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="rate-star ">
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div class="rate-star">
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <span>3.1</span>
+                                                <!-- <img src="./node_modules/@fluentui/svg-icons/icons/star_12_regular.svg" alt="">
+                                                <img src="./node_modules/@fluentui/svg-icons/icons/star_12_regular.svg" alt=""> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="information__item-description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet dui a erat consequat porta quis a velit. Nullam consectetur adipiscing elit. Mauris sit amet dui...
+                                    </p>
+                                </div>
+                                <div class="information__item">
+                                    <div class="information__item-header">
+                                        <div class="information__item-header-img">
+                                            <img src="./assets/img/content/ava2.png" alt="">
+                                        </div>
+                                        <div class="information__item-header-title">
+                                            <p>Tech Support</p>
+                                            <div class="information__item-header-rate">
+                                                <div class="information__item-header-rate">
+                                                    <div class="rate-star rate-star--color ">
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star rate-star--color">
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star rate-star--color">
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star ">
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star">
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                    <span>3.1</span>
+
+                                                <!-- <img src="./node_modules/@fluentui/svg-icons/icons/star_12_regular.svg" alt="">
+                                                <img src="./node_modules/@fluentui/svg-icons/icons/star_12_regular.svg" alt=""> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="information__item-description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet dui a erat consequat porta quis a velit. Nullam consectetur adipiscing elit. Mauris sit amet dui...
+                                    </p>                              
+                                </div>
+                                <div class="information__item">
+                                    <div class="information__item-header">
+                                        <div class="information__item-header-img">
+                                            <img src="./assets/img/content/ava3.png" alt="">
+                                        </div>
+                                        <div class="information__item-header-title">
+                                            <p>Tech Support</p>
+                                            <div class="information__item-header-rate">
+                                                <div class="information__item-header-rate">
+                                                    <div class="rate-star rate-star--color ">
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star rate-star--color">
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star rate-star--color">
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star ">
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star">
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                    <span>3.1</span>
+                                                <!-- <img src="./node_modules/@fluentui/svg-icons/icons/star_12_regular.svg" alt="">
+                                                <img src="./node_modules/@fluentui/svg-icons/icons/star_12_regular.svg" alt=""> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                    <p class="information__item-description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet dui a erat consequat porta quis a velit. Nullam consectetur adipiscing elit. Mauris sit amet dui...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="information__list">
+                                <div class="information__item">
+                                    <div class="information__item-header">
+                                        <div class="information__item-header-img">
+                                            <img src="./assets/img/content/ava4.png" alt="">
+                                        </div>
+                                        <div class="information__item-header-title">
+                                            <p>Tech Support</p>
+                                            <div class="information__item-header-rate">
+                                                <div class="rate-star rate-star--color ">
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="rate-star rate-star--color">
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="rate-star rate-star--color">
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="rate-star ">
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div class="rate-star">
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <span>3.1</span>
+                                                <!-- <img src="./node_modules/@fluentui/svg-icons/icons/star_12_regular.svg" alt="">
+                                                <img src="./node_modules/@fluentui/svg-icons/icons/star_12_regular.svg" alt=""> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="information__item-description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet dui a erat consequat porta quis a velit. Nullam consectetur adipiscing elit. Mauris sit amet dui...
+                                    </p>
+                                </div>
+                                <div class="information__item">
+                                    <div class="information__item-header">
+                                        <div class="information__item-header-img">
+                                            <img src="./assets/img/content/ava5.png" alt="">
+                                        </div>
+                                        <div class="information__item-header-title">
+                                            <p>Tech Support</p>
+                                            <div class="information__item-header-rate">
+                                                <div class="information__item-header-rate">
+                                                    <div class="rate-star rate-star--color ">
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star rate-star--color">
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star rate-star--color">
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star ">
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star">
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                    <span>3.1</span>
+
+                                                <!-- <img src="./node_modules/@fluentui/svg-icons/icons/star_12_regular.svg" alt="">
+                                                <img src="./node_modules/@fluentui/svg-icons/icons/star_12_regular.svg" alt=""> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="information__item-description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet dui a erat consequat porta quis a velit. Nullam consectetur adipiscing elit. Mauris sit amet dui...
+                                    </p>                              
+                                </div>
+                                <div class="information__item">
+                                    <div class="information__item-header">
+                                        <div class="information__item-header-img">
+                                            <img src="./assets/img/content/ava6.png" alt="">
+                                        </div>
+                                        <div class="information__item-header-title">
+                                            <p>Tech Support</p>
+                                            <div class="information__item-header-rate">
+                                                <div class="information__item-header-rate">
+                                                    <div class="rate-star rate-star--color ">
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star rate-star--color">
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star rate-star--color">
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star ">
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                    <div class="rate-star">
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                    <span>3.1</span>
+                                                <!-- <img src="./node_modules/@fluentui/svg-icons/icons/star_12_regular.svg" alt="">
+                                                <img src="./node_modules/@fluentui/svg-icons/icons/star_12_regular.svg" alt=""> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                    <p class="information__item-description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet dui a erat consequat porta quis a velit. Nullam consectetur adipiscing elit. Mauris sit amet dui...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+    
+            </div>
+        </div>
+        
+    </div>
+    <script >
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide__item");
+            console.log(slides);
+            let dots = document.getElementsByClassName("dot__item");
+            console.log(dots)
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+            for (const dot of dots) {
+                dot.classList.remove("dot__item--active")
+            }
+            console.log(slideIndex)
+            slides[slideIndex - 1].style.display ='flex';
+            dots[slideIndex-1].classList.add("dot__item--active");
+            }
+            // show menu 
+            const menuMore = document.querySelector(".menu__more-js")
+            const menuMoreItem = document.querySelector(".menu__list-item-js")
+            const wrap = document.querySelector(".content-container")
+            console.log(menuMore)
+            console.log(menuMoreItem)
+            console.log(wrap)
+
+            // function showMenu(){
+            //     menuMore.classList.add('active')
+            // }
+            function HiddenMenu(){
+                menuMore.classList.remove('active')
+            }
+            menuMoreItem.addEventListener('click',function(){
+                menuMore.classList.add('active')
+            })
+            wrap.addEventListener('click', function(){
+                menuMore.classList.remove('active')
+            })
+            // wrap.addEventListener('click', function(event) {
+            //     event.stopPropagation();
+            // })
+            
+
+
+
+    </script>
+</body>
+
+</html>
